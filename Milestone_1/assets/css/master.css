@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#SiteHeader {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    background-color: #2E3A46;
+}
+
+label {
+    color: white;
+    padding: 1rem;
+}
+
+img {
+    width: 50px;
+    margin: 10px;
+}
