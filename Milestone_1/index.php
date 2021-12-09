@@ -111,7 +111,7 @@ $disks = [
                 <div class="card">
                     <img src=<?php echo "$disk[poster]" ?> alt="">
                     <div class="title">
-                        <?php echo "$disk[title]" ?>
+                        <?php echo strtoupper("$disk[title]") ?>
                     </div>
                     <div class="author">
                         <?php echo "$disk[author]" ?>
