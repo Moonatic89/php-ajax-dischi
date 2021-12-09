@@ -9,7 +9,7 @@ $disks = [
 "year" => "1988"
 ],
 [
-"poster" => "https://img.discogs.com/vknPDdrqRbT92pNRX0W4I5N91jg=/fit-in/300x300/filters =>strip_icc() =>format(jpeg) =>mode_rgb() =>quality(40)/discogs-images/R-1246953-1448927086-6590.jpeg.jpg",
+"poster" => "https://img.discogs.com/vknPDdrqRbT92pNRX0W4I5N91jg=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-1246953-1448927086-6590.jpeg.jpg",
 "title" => "Live at Wembley 86",
 "author" => "Queen",
 "genre" => "Pop",
@@ -58,7 +58,7 @@ $disks = [
 "year" => "1988"
 ],
 [
-"poster" => "https://img.discogs.com/KOBsqQwKiNKH-q927oHMyVdDzSo=/fit-in/596x596/filters =>strip_icc() =>format(jpeg) =>mode_rgb() =>quality(90)/discogs-images/R-6406665-1418464475-6120.jpeg.jpg",
+"poster"=> "https://img.discogs.com/KOBsqQwKiNKH-q927oHMyVdDzSo=/fit-in/596x596/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-6406665-1418464475-6120.jpeg.jpg",
 "title" => "Hard Wired",
 "author" => "Dave Weckl",
 "genre" => "Jazz",
@@ -98,6 +98,38 @@ $disks = [
         <img src="./assets//img/logo.svg" alt="Spotify Logo">
 
     </header>
+
+    <main id="SiteMain">
+
+        <?php 
+            foreach ($disks as $disk) {
+        ?>
+
+        <div class="container">
+            <div class="card">
+                <img src=<?php echo "$disk[poster]" ?> alt="">
+                <div class="title">
+
+                </div>
+
+                <div class="author">
+
+                </div>
+                <div class="year">
+
+                </div>
+            </div>
+        </div>
+
+        <?php    
+}
+
+
+
+?>
+
+
+    </main>
 </body>
 
 </html>

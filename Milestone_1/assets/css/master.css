@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+/*#region Header */
+
 #SiteHeader {
     display: flex;
     align-items: center;
@@ -20,3 +22,16 @@ img {
     width: 50px;
     margin: 10px;
 }
+
+/* #endregion  */
+
+/* #region Main */
+
+#SiteMain {
+    background-color: #1E2D3B;
+    height: calc(100vh - 70px);
+    width: 100%;
+
+}
+
+/* #endregion */
