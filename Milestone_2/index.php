@@ -26,18 +26,20 @@
 
         <div class="container" id="app">
 
-            <div class="row" v-for="disk in disks" :key="disk.poster">
+            <div class="row">
 
-                <div class="card">
+                <div class="card" v-for="disk in disks" :key="disk.poster">
                     <img :src="disk.poster" alt="">
                     <div class="title">
-                        <?php echo strtoupper("$disk[title]") ?>
+                        {{disk.title}}
                     </div>
                     <div class="author">
-                        <?php echo "$disk[author]" ?>
+                        {{disk.author}}
+
                     </div>
                     <div class="year">
-                        <?php echo "$disk[year]" ?>
+                        {{disk.year}}
+
                     </div>
                 </div>
 
