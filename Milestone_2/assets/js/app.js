@@ -2,7 +2,7 @@ const app = new Vue({
 
     el: "#app",
     data: {
-        disks: null
+        disks: null,
     },
     mounted() {
         axios

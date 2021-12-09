@@ -12,14 +12,10 @@
     ?>
     </style>
 
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"
-        integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </head>
 
-<body id="app">
+<body>
 
     <header id="SiteHeader">
         <img src="./assets//img/logo.svg" alt="Spotify Logo">
@@ -28,15 +24,11 @@
 
     <main id="SiteMain">
 
-        <div class="container">
+        <div class="container" id="app">
             <div class="row" v-for="disk in disks" :key="disk.poster">
 
-                <!-- <?php 
-            foreach ($disks as $disk) {
-                ?> -->
-
                 <div class="card">
-                    <img src=<?php echo "$disk[poster]" ?> alt="">
+                    <img :src="disk.poster" alt="">
                     <div class="title">
                         <?php echo strtoupper("$disk[title]") ?>
                     </div>
@@ -47,18 +39,24 @@
                         <?php echo "$disk[year]" ?>
                     </div>
                 </div>
-                <!-- 
-                <?php    
-}
-
-?> -->
 
             </div>
         </div>
 
     </main>
 
-</body>
 
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js'
+        integrity='sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw=='
+        crossorigin='anonymous' referrerpolicy='no-referrer'></script>
+
+
+    <script src='https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js'></script>
+
+
+    <script src="./assets/js/app.js"></script>
+
+</body>
 
 </html>
