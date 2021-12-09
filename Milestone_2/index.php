@@ -25,6 +25,7 @@
     <main id="SiteMain">
 
         <div class="container" id="app">
+
             <div class="row" v-for="disk in disks" :key="disk.poster">
 
                 <div class="card">

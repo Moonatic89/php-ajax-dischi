@@ -6,7 +6,7 @@ const app = new Vue({
     },
     mounted() {
         axios
-            .get("/api/disks.php")
+            .get("./axios/api/disks.php")
             .then(r => {
                 this.disks = r.data
             }).catch(e => {
