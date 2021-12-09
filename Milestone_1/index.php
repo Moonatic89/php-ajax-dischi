@@ -93,7 +93,11 @@ $disks = [
 </head>
 
 <body>
-    <h1><?php echo $disks[0]["title"]?></h1>
+
+    <header id="SiteHeader">
+        <img src="./assets//img/logo.svg" alt="Spotify Logo">
+
+    </header>
 </body>
 
 </html>
