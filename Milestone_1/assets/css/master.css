@@ -18,7 +18,7 @@ label {
     padding: 1rem;
 }
 
-img {
+#SiteHeader img {
     width: 50px;
     margin: 10px;
 }
@@ -32,6 +32,24 @@ img {
     height: calc(100vh - 70px);
     width: 100%;
 
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+}
+
+.card {
+    background-color: #2E3A46;
+    width: calc(100% / 6);
+    height: calc(100% / 2);
+}
+
+.card>img {
+    width: 100%;
 }
 
 /* #endregion */

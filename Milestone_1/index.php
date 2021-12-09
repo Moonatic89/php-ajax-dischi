@@ -101,33 +101,33 @@ $disks = [
 
     <main id="SiteMain">
 
-        <?php 
-            foreach ($disks as $disk) {
-        ?>
-
         <div class="container">
-            <div class="card">
-                <img src=<?php echo "$disk[poster]" ?> alt="">
-                <div class="title">
+            <div class="row">
 
+                <?php 
+            foreach ($disks as $disk) {
+                ?>
+
+                <div class="card">
+                    <img src=<?php echo "$disk[poster]" ?> alt="">
+                    <div class="title">
+                        <?php echo "$disk[title]" ?>
+                    </div>
+                    <div class="author">
+                        <?php echo "$disk[author]" ?>
+                    </div>
+                    <div class="year">
+                        <?php echo "$disk[year]" ?>
+                    </div>
                 </div>
 
-                <div class="author">
-
-                </div>
-                <div class="year">
-
-                </div>
-            </div>
-        </div>
-
-        <?php    
+                <?php    
 }
-
-
 
 ?>
 
+            </div>
+        </div>
 
     </main>
 </body>
